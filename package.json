@@ -1,0 +1,16 @@
+{
+  "name": "landing-page-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage":"https://uroge.github.io/landingpage",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
