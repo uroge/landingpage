@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --textPurple: #2d2d31;
+  --mainPurple: #2e2b41;
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --mainBlue: #9aa7c4;
+  --mainGrey: #7f7e81;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--mainWhite);
+    font-family: 'Karla', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+    #myNavbar {
+        min-height: calc(100vh - 72px);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav-button {
+        margin-left: 0!important;
+        width: 15rem!important;
+    }
+
+    .nav-item {
+        margin: 0 auto!important;
+        margin-top: 20px!important;
+        font-weight: 700;
+    }
+
+    .nav-link {
+        margin: 0 auto!important;
+    }
+
+    .pattern-nav {
+        position: absolute;
+        bottom: -6%;
+        right: 0;
+    }
+}
+
+
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-button {
+    margin-left: 1rem;
+    border: 1px solid var(--textPurple);
+    width: 9.063rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.7s ease-in-out;
+}
+
+.nav-button:hover {
+    color: var(--mainWhite)!important;
+    background: var(--textPurple);
+    color: var(--mainWhite);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--mainGrey);
+    transition: all 0.7s ease-in-out;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: var(--textPurple);
+}
+/* BANNER */
+.banner-head {
+    min-height: calc(93vh - 72px);
+    background: var(--mainPurple);
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.banner-row {
+    min-height: calc(93vh - 72px);
+}
+
+@media screen and (min-width: 780px) {
+    .banner-head::after {
+        content: '';
+        background-image: url('../images/bg-pattern-intro-right-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .banner-head::before {
+        content: '';
+        background-image: url('../images/bg-pattern-intro-left-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        position: absolute;
+        bottom: -40%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .banner-head::after {
+        content: '';
+        background-image: url('../images/bg-pattern-intro-right-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        position: absolute;
+        top: 40%;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .banner-head::before {
+        content: '';
+        background-image: url('../images/bg-pattern-intro-left-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        position: absolute;
+        bottom: 70.5%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .banner-head {
+        overflow: hidden;
+    }
+}
+
+.banner-head h1 {
+    font-size: 4rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.banner-head p {
+    word-spacing: 2.8px;
+    font-size: 1rem;
+}
+
+.banner-btn {
+    border: 1px solid var(--mainWhite);
+    width: 9.063rem!important;
+    padding: 2rem;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    transition: all 0.7s ease-in-out;
+    color: var(--mainWhite);
+    text-decoration: none;
+    border-radius: 0%;
+    /* to position button over pattern */
+    position: absolute;
+    z-index: 500000;
+}
+
+.banner-btn:hover {
+    background: var(--mainWhite);
+    color: var(--textPurple);
+    text-decoration: none;
+}
+
+
+.underline {
+    width: 10rem;
+    margin-bottom: 40px;
+    height: 0.8px;
+    background: var(--mainWhite);
+    border-radius: 10px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.intro-image {
+    top: 106px;
+    position: absolute;
+}
+
+.intro-image-mobile {
+    width: 100%;
+}
+
+.img-mobile {
+    background: url('../images/image-intro-mobile.jpg');
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* HOW WE WORK */
+#how-we-work {
+    color: var(--textPurple);
+    margin-top: 15rem;
+}
+
+.underline-how-we-work {
+    width: 10rem;
+    margin-bottom: 40px;
+    height: 0.8px;
+    background: var(--textPurple);
+    border-radius: 10px;
+}
+
+.how-we-work-h {
+    color: var(--textPurple);
+    font-size: 4rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.hww-heading {
+    color: var(--textPurple);
+    font-size: 2.2rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.hww-p {
+    color: var(--textPurple);
+    font-size: 1rem;
+}
+/* FIND OUT MORE */
+.fom-heading {
+    font-size: 3.6rem;
+    font-family: 'DM Serif Display', serif;
+    color: var(--mainWhite);
+}
+
+.find-out-more {
+    background: var(--mainPurple);
+    position: relative;
+    overflow: hidden;
+}
+
+.hww-btn {
+    border: 1px solid var(--mainWhite);
+    width: 11rem!important;
+    padding: 2rem;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    transition: all 0.7s ease-in-out;
+    color: var(--mainWhite);
+    text-decoration: none;
+    border-radius: 0%;
+    /* to position button over pattern */
+    position: absolute;
+    z-index: 500000;
+    margin-left: 15rem;
+}
+
+@media screen and (max-width: 992px) {
+    .hww-btn {
+        border: 1px solid var(--mainWhite);
+        width: 11rem!important;
+        padding: 2rem;
+        padding-bottom: 9px;
+        padding-top: 9px;
+        transition: all 0.7s ease-in-out;
+        color: var(--mainWhite);
+        text-decoration: none;
+        border-radius: 0%;
+        /* to position button over pattern */
+        position: absolute;
+        z-index: 500000;
+        margin: 0 25%;
+    }
+
+    .find-out-more {
+        background: var(--mainPurple);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hww-img-mobile {
+        display: block;
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .hww-img{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 780px) {
+
+    .hww-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .hww-img-mobile {
+        display: none;
+    }
+}
+
+.hww-btn:hover {
+    background: var(--mainWhite);
+    color: var(--textPurple);
+    text-decoration: none;
+}
+
+.fom-col {
+    height: 100px;
+}
+
+/* FOOTER */
+#footer {
+    background: #fafafa;
+    padding: 2.3%;
+    position: relative;
+}
+
+.footer-head  {
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.footer-heading {
+    color: #d7d7d7;
+    font-weight: 700;
+}
+
+.footer-heading-sm {
+    color: var(--textPurple);
+    font-weight: 700;
+}
+
+.footer-body {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .footer-content {
+        text-align: center;
+    }
+
+    .bg-pattern-footer-mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .bg-pattern-footer {
+        display: none;
+    }
+
+    .footer-logo {
+        /* to position button over pattern */
+        position: absolute;
+        z-index: 500000;
+        top: 1%;
+        left: 5%;
+    }
+
+    .footer-icons {
+        /* to position button over pattern */
+        position: absolute;
+        z-index: 500000;
+        top: 1%;
+        right: 5%;
+    }
+}
+
+@media screen and (min-width: 780px) {
+
+    .bg-pattern-footer {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .bg-pattern-footer-mobile {
+        display: none;
+    }
+}
+
+
